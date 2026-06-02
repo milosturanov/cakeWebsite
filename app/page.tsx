@@ -1,6 +1,7 @@
 import Header from "@/components/custom/header";
 import Hero from "@/components/custom/hero";
 import CakeShowcase from "@/components/custom/cakeShowcase";
+import Design from "@/components/custom/design";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <CakeShowcase />
+      <Design />
     </div>
   );
 }

@@ -4,7 +4,7 @@
 
 :root {
   --primary: #f7f4f0;
-  --secondary: #151414;
+  --secondary: rgba(21, 20, 20, 0.9);
   --accent: #eb4c74;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
