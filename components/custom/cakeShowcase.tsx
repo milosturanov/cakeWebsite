@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 import Image from "next/image";
 
 export default function CakeShowcase() {
@@ -21,7 +20,7 @@ export default function CakeShowcase() {
             x: ["0%", "-50%"],
             transition: {
               ease: "linear",
-              duration: 7,
+              duration: 12,
               repeat: Infinity,
             },
           }}
@@ -33,8 +32,8 @@ export default function CakeShowcase() {
                   src={slide.src}
                   className="flex-shrink-0 rounded-md"
                   alt=""
-                  height="240"
-                  width="240"
+                  height={240}
+                  width={240}
                   style={{ height: 240, width: "auto" }}
                 ></Image>
               </div>
@@ -48,7 +47,7 @@ export default function CakeShowcase() {
           x: ["-50%", "0%"],
           transition: {
             ease: "linear",
-            duration: 7,
+            duration: 12,
             repeat: Infinity,
           },
         }}
@@ -60,8 +59,8 @@ export default function CakeShowcase() {
                 src={slide.src}
                 className="flex-shrink-0 rounded-md"
                 alt=""
-                height="240"
-                width="240"
+                height={240}
+                width={240}
                 style={{ height: 240, width: "auto" }}
               ></Image>
             </div>
