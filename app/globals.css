@@ -41,6 +41,10 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
+
+  --color-secondary2: rgba(21, 20, 20, 0.6);
+  --color-accent2: #f394ac;
+
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -82,4 +86,17 @@
 
 body {
   background-color: #f7f4f0;
+}
+p {
+  color: var(--secondary);
+}
+.tasteSelected {
+  height: 230px;
+  width: 230px;
+  z-index: 3;
+}
+.subTasteSelected {
+  z-index: 2;
+  height: 140px;
+  width: 140px;
 }

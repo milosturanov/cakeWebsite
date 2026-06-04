@@ -22,7 +22,7 @@ export default function Hero() {
       </p>
       <Link
         href="#"
-        className="font-semibold text-primary bg-accent p-4 w-fit rounded-sm text-base leading-none"
+        className="font-semibold text-primary bg-accent p-4 w-fit rounded-xs text-base leading-none"
       >
         ZAKAŽI ONLAJN
       </Link>

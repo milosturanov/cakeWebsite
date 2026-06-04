@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function DesignCards() {
@@ -44,6 +45,21 @@ export default function DesignCards() {
           </div>
         );
       })}
+      <div className="flex gap-4">
+        <Link
+          href="#"
+          className="text-sm font-bold text-primary bg-accent p-4 w-fit rounded-xs text-base leading-none"
+        >
+          ZAKAŽI ONLAJN
+        </Link>
+        <Link
+          href="#"
+          className="text-sm font-bold text-secondary bg-primary p-4 w-fit rounded-xs text-base leading-none border
+          "
+        >
+          CELA KOLEKCIJA
+        </Link>
+      </div>
     </div>
   );
 }

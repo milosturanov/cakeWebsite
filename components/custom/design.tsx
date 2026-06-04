@@ -5,7 +5,7 @@ export default function Design() {
     <div className="flex flex-col px-4 mx-auto gap-[48px]">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-1 ">
-          <h4 className="font-medium text-xs text-secondary">DIZAJN</h4>
+          <h4 className="font-medium text-xs text-secondary2">DIZAJN</h4>
           <h1 className="font-semibold text-3xl text-secondary">
             POSEBNE TORTE ZA{" "}
             <span className="text-accent underline">POSEBNE PRILIKE</span>
