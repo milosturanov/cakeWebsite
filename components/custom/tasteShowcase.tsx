@@ -4,14 +4,79 @@ import { useState } from "react";
 
 export default function TasteShowCase() {
   const [currentIndex, setCurrentIndex] = useState(2);
+
   return (
     <div className="flex flex-col">
-      <div className="flex gap-[-30px] items-center">
-        <Image alt="" src="/Taste1.svg" width={100} height={100} />
-        <Image alt="" src="/Taste2.svg" width={100} height={100} />
-        <Image alt="" src="/Taste3.svg" width={100} height={100} />
-        <Image alt="" src="/Taste4.svg" width={100} height={100} />
-        <Image alt="" src="/Taste5.svg" width={100} height={100} />
+      <div className="flex items-center">
+        <Image
+          alt=""
+          src="/Taste1.svg"
+          width={120}
+          height={120}
+          className={
+            currentIndex == 1
+              ? "tasteSelected"
+              : Math.abs(currentIndex - 1) == 1
+                ? "subTasteSelected"
+                : currentIndex == 5
+                  ? "subTasteSelected order-[99]"
+                  : "hidden"
+          }
+        />
+        <Image
+          alt=""
+          src="/Taste2.svg"
+          width={120}
+          height={120}
+          className={
+            currentIndex == 2
+              ? "tasteSelected"
+              : Math.abs(currentIndex - 2) == 1
+                ? "subTasteSelected"
+                : "hidden"
+          }
+        />
+        <Image
+          alt=""
+          src="/Taste3.svg"
+          width={120}
+          height={120}
+          className={
+            currentIndex == 3
+              ? "tasteSelected"
+              : Math.abs(currentIndex - 3) == 1
+                ? "subTasteSelected"
+                : "hidden"
+          }
+        />
+        <Image
+          alt=""
+          src="/Taste4.svg"
+          width={120}
+          height={120}
+          className={
+            currentIndex == 4
+              ? "tasteSelected"
+              : Math.abs(currentIndex - 4) == 1
+                ? "subTasteSelected"
+                : "hidden"
+          }
+        />
+        <Image
+          alt=""
+          src="/Taste5.svg"
+          width={120}
+          height={120}
+          className={
+            currentIndex == 5
+              ? "tasteSelected"
+              : Math.abs(currentIndex - 5) == 1
+                ? "subTasteSelected"
+                : currentIndex == 1
+                  ? "subTasteSelected order-[-1]"
+                  : "hidden"
+          }
+        />
       </div>
       <div className="flex">
         <Image
@@ -20,7 +85,11 @@ export default function TasteShowCase() {
           width={50}
           height={50}
           onClick={() => {
-            setCurrentIndex(currentIndex - 1);
+            if (currentIndex === 1) {
+              setCurrentIndex(5);
+            } else {
+              setCurrentIndex(currentIndex - 1);
+            }
           }}
         />
         <Image
@@ -29,7 +98,11 @@ export default function TasteShowCase() {
           width={50}
           height={50}
           onClick={() => {
-            setCurrentIndex(currentIndex + 1);
+            if (currentIndex === 5) {
+              setCurrentIndex(1);
+            } else {
+              setCurrentIndex(currentIndex + 1);
+            }
           }}
         />
       </div>

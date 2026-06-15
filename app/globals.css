@@ -91,12 +91,11 @@ p {
   color: var(--secondary);
 }
 .tasteSelected {
-  height: 230px;
-  width: 230px;
+  width: 200px;
+  height: auto;
   z-index: 3;
 }
 .subTasteSelected {
   z-index: 2;
-  height: 140px;
-  width: 140px;
+  scale: 1;
 }
