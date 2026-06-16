@@ -84,6 +84,11 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+::-webkit-scrollbar {
+  /* Remove scrollbar */
+  display: none;
+}
+
 body {
   background-color: #f7f4f0;
 }
@@ -95,7 +100,11 @@ p {
   height: auto;
   z-index: 3;
 }
-.subTasteSelected {
+.subTasteSelectedLeft {
   z-index: 2;
-  scale: 1;
+  margin-right: -60px;
+}
+.subTasteSelectedRight {
+  z-index: 2;
+  margin-left: -60px;
 }
