@@ -3,6 +3,7 @@ import Hero from "@/components/custom/hero";
 import CakeShowcase from "@/components/custom/cakeShowcase";
 import Design from "@/components/custom/design";
 import Taste from "@/components/custom/taste";
+import NewsLetter from "@/components/custom/newsletter";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <CakeShowcase />
       <Design />
       <Taste />
+      <NewsLetter />
     </div>
   );
 }
