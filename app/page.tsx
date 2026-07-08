@@ -4,6 +4,7 @@ import CakeShowcase from "@/components/custom/cakeShowcase";
 import Design from "@/components/custom/design";
 import Taste from "@/components/custom/taste";
 import NewsLetter from "@/components/custom/newsletter";
+import SweetTables from "@/components/custom/sweetTables";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Design />
       <Taste />
       <NewsLetter />
+      <SweetTables />
     </div>
   );
 }
