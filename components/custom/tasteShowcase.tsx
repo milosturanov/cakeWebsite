@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import data from "@/taste.json";
-import { div } from "framer-motion/client";
 
 export default function TasteShowCase() {
   const [currentIndex, setCurrentIndex] = useState(2);

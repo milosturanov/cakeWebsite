@@ -5,6 +5,7 @@ import Design from "@/components/custom/design";
 import Taste from "@/components/custom/taste";
 import NewsLetter from "@/components/custom/newsletter";
 import SweetTables from "@/components/custom/sweetTables";
+import Faq from "@/components/custom/faq";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Taste />
       <NewsLetter />
       <SweetTables />
+      <Faq />
     </div>
   );
 }
